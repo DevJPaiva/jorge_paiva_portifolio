@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | UX/UI Designer</title>
+
+    <!-- Tailwind CSS Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        condensed: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0a0a0a',
+                        light: '#ffffff',
+                    },
+                    transitionTimingFunction: {
+                        'reveal': 'cubic-bezier(0.2, 1, 0.4, 1)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Material Symbols (Material 3 Icons) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- Bundle gerado pelo esbuild -->
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
